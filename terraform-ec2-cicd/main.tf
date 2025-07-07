@@ -1,7 +1,7 @@
 resource "aws_instance" "example" {
   ami           = var.ami_id
   instance_type = var.instance_type
-  key_name      = new-for-gitaction-testing.pem
+  key_name      = new-for-gitaction-testing
 
   tags = {
     Name = "MyTerraformEC2"
